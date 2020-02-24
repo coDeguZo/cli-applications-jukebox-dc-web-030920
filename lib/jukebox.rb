@@ -35,10 +35,9 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  response = gets.chomp
-  if songs.has_key?(response)
-    #puts songs[response]
-    Sound.beep(100, 500)
+  input = gets.chomp
+  if songs.has_key?(input)
+    songs[input]
   else
     puts "Invalid input, please try again"
   end
