@@ -28,8 +28,8 @@ def list(songs)
   songs.each do |song|
     array << "#{counter}. #{song}"
     counter += 1
-    return index
   end
+  array
 end
 
 
