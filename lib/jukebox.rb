@@ -26,7 +26,7 @@ def list(songs)
   array = []
   counter = 1
   songs.each do |song|
-    index = "#{counter}. #{song}"
+    array << "#{counter}. #{song}"
     counter += 1
     return index
   end
