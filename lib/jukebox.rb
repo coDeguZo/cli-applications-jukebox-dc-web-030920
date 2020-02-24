@@ -35,9 +35,11 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  input = gets.strip
-  if input == songs
-    puts "Playing #{songs}"
+  response = gets.chomp
+  if 0 < response.to_i && response.to_i < 10
+    puts "Playing #{songs[response.to_i-1]}"
+  elsif songs.include?(response)
+    puts "Playing #{response}"
   else
     puts "Invalid input, please try again"
   end
