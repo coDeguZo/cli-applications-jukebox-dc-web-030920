@@ -26,6 +26,7 @@ def list(songs)
   array = []
   songs.each do |song|
     index = "1. #{song}"
+    binding.pry
   end
 end
 
