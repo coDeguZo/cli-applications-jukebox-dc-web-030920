@@ -34,7 +34,21 @@ def list(songs)
 end	
 
 def play(songs)
-  
+  puts "Please enter a song name or number:"
+  response = gets.chomp
+  if songs.has_key?(response)
+    #puts songs[response]
+    Sound.beep(100, 500)
+  else
+    puts "Invalid input, please try again"
+  end
+end
+
+
+def exit_jukebox	def exit_jukebox
+  #this method is the same as in jukebox.rb	  #this method is the same as in jukebox.rb
+  puts "Goodbye"
+end	end
 
 
 
