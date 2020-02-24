@@ -22,7 +22,14 @@ def help
 end
 
 def list(songs)
-  songs.each { |song, location| puts song}
+  array = []
+  number = 1
+  songs.each do |song, location|
+    puts "#{number}. #{songs}"
+    array << location
+    number += 1
+  end
+  array
 end
 
 
