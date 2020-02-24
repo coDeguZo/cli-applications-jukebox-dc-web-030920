@@ -23,14 +23,14 @@ def help
 end
 
 def list(songs)
-  a = []
+  array = []
   counter = 1
   songs.each do |song, index|
     puts "#{counter}. #{song}"
-    a << index
+    array << index
     counter += 1
   end
-  a
+  array
 end	
 
 
