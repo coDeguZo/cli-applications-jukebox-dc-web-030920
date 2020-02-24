@@ -23,8 +23,8 @@ def help
 end
 
 def list(songs)
-  songs.each do |song, index|
-    binding.pry
+  array = []
+  songs.each do |song|
   end
 end
 
