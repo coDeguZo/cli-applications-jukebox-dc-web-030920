@@ -23,6 +23,9 @@ def help
 end
 
 def list(songs)
+  #this method is different! Collect the keys of the my_songs hash and 	  a = []
+  #this method is different! Collect the keys of the my_songs hash and
+  #list the songs by name	  #list the songs by name
   counter = 1
   songs.each do |song, index|
     puts "#{counter}. #{song}"
@@ -30,7 +33,7 @@ def list(songs)
     counter += 1
   end
   a
-end
+end	end
 
 
 
