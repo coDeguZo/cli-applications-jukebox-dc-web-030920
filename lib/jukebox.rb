@@ -36,7 +36,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if songs == list(songs)
+  if input == list(songs)
     puts "Playing #{songs}"
   else
     puts "Invalid input, please try again"
