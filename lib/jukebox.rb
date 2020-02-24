@@ -27,6 +27,7 @@ def list(songs)
   counter = 1
   songs.each do |song|
     index = "#{counter}. #{song}"
+    counter += 1
     binding.pry
   end
 end
