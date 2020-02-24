@@ -35,9 +35,9 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  input = gets.chomp
-  if songs.has_key?(input)
-    songs[input]
+  input = gets.strip
+  if songs == list(songs)
+    puts "Playing #{songs}"
   else
     puts "Invalid input, please try again"
   end
