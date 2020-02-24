@@ -29,6 +29,7 @@ def list(songs)
     index = "#{counter}. #{song}"
     counter += 1
   end
+  index
 end
 
 
