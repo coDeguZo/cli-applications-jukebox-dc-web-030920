@@ -22,40 +22,16 @@ def help
 end
 
 def list(songs)
-  array = []
-  number = 1
-  songs.each do |song, location|
-    puts "#{number}. #{songs}"
-    array << location
-    number += 1
-  end
-  array
-end
-
-
-
-
-
-
-
-
-
-
-
-
-def play(songs)
-  puts "Please enter a song name or number:"
-  user_response = gets.chomp
-  songs.each_with_index do |song, i|
-    if user_request.to_i == i
-      puts "playing #{songs[i-1]}"
-    elsif user_request == song 
-        puts "playing #{song[i]}"
-    else 
-      puts "Invalid input, please try again"
-    end 
+  songs.each do |song, index|
+    binding.pry
   end
 end
+
+
+
+
+
+
   
   
   
