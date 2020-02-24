@@ -24,8 +24,9 @@ end
 
 def list(songs)
   array = []
+  counter = 1
   songs.each do |song|
-    index = "1. #{song}"
+    index = "#{counter}. #{song}"
     binding.pry
   end
 end
