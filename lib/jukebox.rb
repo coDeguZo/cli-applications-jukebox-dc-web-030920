@@ -54,6 +54,22 @@ def run
   puts "Please enter a command"
   input = gets.strip
   unless input == 'exit'
+    case input
+      when 'help'
+        help
+      when 'play'
+        play(songs)
+      when 'list'
+        list(songs)
+      when 'exit'
+        exit_jukebox
+      else
+        puts "Invalid Response"
+      end
+      run(songs)
+    end
+end
+      
   
 
 
