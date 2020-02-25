@@ -64,8 +64,7 @@ def run(songs)
         play(songs)
       when "exit"
         exit_jukebox
-      else
-      puts "Invalid input, please try again"
+        break
     end
     run(songs)
   end
