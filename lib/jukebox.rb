@@ -47,9 +47,13 @@ end
 
 
 def exit_jukebox
-  #this method is the same as in jukebox.rb	  #this method is the same as in jukebox.rb
   puts "Goodbye"
 end	
+
+def run
+  puts "Please enter a command"
+  input = gets.strip
+  
 
 
 
