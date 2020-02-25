@@ -50,25 +50,25 @@ def exit_jukebox
   puts "Goodbye"
 end	
 
-def run
-  puts "Please enter a command"
-  input = gets.strip
-  unless input == 'exit'
-    case input
-      when 'help'
-        help
-      when 'play'
-        play
-      when 'list'
-        list
-      when 'exit'
-        exit_jukebox
+def run(songs)
+  help
+  puts "Please enter a command:"
+  response = gets.chomp
+  unless response == "exit"
+    case response
+      when "help"
+      help
+      when "list"
+      list(songs)
+      when "play"
+      play(songs)
       else
-        puts "Invalid Response"
-      end
+      puts "Invalid input, please try again"
     end
-end
-      
+    run(songs)
+  end
+  exit_jukebox
+end  
   
 
 
