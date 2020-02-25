@@ -67,6 +67,7 @@ def run(songs)
       puts "Invalid input, please try again"
     end
   end
+  exit_jukebox
 end  
   
 
