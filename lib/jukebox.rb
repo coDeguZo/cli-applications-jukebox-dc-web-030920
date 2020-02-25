@@ -66,7 +66,6 @@ def run
       else
         puts "Invalid Response"
       end
-      run(songs)
     end
 end
       
